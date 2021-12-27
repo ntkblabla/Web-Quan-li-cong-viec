@@ -1,0 +1,30 @@
+<div class="folder margin_bottom_2 display_none" data-id="">
+  <!-- sprint folder title  -->
+  <style>
+    .folder .title:hover .actions_folder {
+      display: flex;
+    }
+  </style>
+  <div class="title display_flex justify_content_sb cursor_pointer">
+    <div class="title_name width_100_percent display_flex align_items_center position_relative no_select padding_y_6 padding_left_30">
+      <i class="toggle_icon fas fa-sort-down position_absolute font_size_12" style="left: 15px; top: 7px; transform: rotate(-90deg); transition: transform 0.1s"></i>
+      <i class="fas fa-folder margin_right_10"></i>
+      <span class="folder_name text_transform_capitalize">
+      </span>
+    </div>
+    <div class="opacity_0_5 display_none actions_folder align_items_center">
+      <div class="margin_right_10 cursor_pointer">
+        <i class="fas fa-ellipsis-h"></i>
+      </div>
+      <div class="cursor_pointer open_folder_options">
+        <i class="fas fa-plus"></i>
+      </div>
+    </div>
+  </div>
+  <!-- sprint folder children  -->
+  <div class="sprint_list display_none ">
+  </div>
+  <div class="sprint_item_temp">
+    <%-include("../sprint-item/sprint-item-temp.ejs");%>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+version: "3"
+
+networks:
+  web_programming:
+    external:
+      name: web_programming
+
+services:
+  mariadb:
+    image: mariadb:latest
+    # restart: always
+    volumes:
+      - web_programming-mariadb:/var/lib/mysql
+
+    networks:
+      - web_programming
+    environment:
+      - TZ=Asia/Ho_Chi_Minh
+      - MYSQL_ROOT_PASSWORD=123qwe
+      - MYSQl_TCP_PORT=33030
+      - MYSQL_UNIX_PORT=33020
+    ports:
+      - "3307:3306"
+  backend:
+    build:
+      context: .
+      dockerfile: ${DOCKER_FILE}
+    command: yarn start
+    volumes:
+      - ./:/app:cached
+    networks:
+      - web_programming
+    # restart: always
+    ports:
+      - ${PORT}:${PORT}
+    environment:
+      - TZ=Asia/Ho_Chi_Minh
+      - PORT=${PORT}
+    depends_on:
+      - mariadb
+
+volumes:
+  web_programming-mariadb:
+  notused:

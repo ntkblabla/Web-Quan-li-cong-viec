@@ -1,0 +1,39 @@
+<!-- task list process  -->
+<div class="task_list margin_top_20 margin_left_10 margin_bottom_50 display_none" data-id="">
+  <div class="task_list_title display_flex justify_content_sb">
+    <div class="display_flex align_items_center cursor_pointer">
+      <div
+        class="border_radius_50_percent border_width_1 border_color_secondary border_style_solid display_flex justify_content_center align_items_center margin_right_5"
+        style="width: 17px; height: 17px"
+      >
+        <i class="far fa-chevron-down font_size_10"></i>
+      </div>
+      <span
+        class="task_list_title_name margin_y_0 text_transform_uppercase padding_x_10 padding_y_4 color_white border_top_left_radius_3 border_top_right_radius_3 font_size_12"
+        style="background-color: rgb(249, 217, 0)"
+      >
+        Doing
+      </span>
+      <div class="margin_left_20">
+        <span class="task_list_count text_transform_uppercase font_size_12">4 Tasks</span>
+      </div>
+    </div>
+    <div class="padding_right_15 display_flex">
+      <div class="width_100 display_flex justify_content_center">
+        <span class="font_weight_700 text_transform_uppercase font_size_12">Assign</span>
+      </div>
+      <div class="width_100 display_flex justify_content_center">
+        <span class="font_weight_700 text_transform_uppercase font_size_12">Due Date</span>
+      </div>
+      <div class="width_100 display_flex justify_content_center">
+        <span class="font_weight_700 text_transform_uppercase font_size_12">Estimate</span>
+      </div>
+    </div>
+  </div>
+  <div class="margin_left_22 bg_primary margin_top_5">
+    <div class="task_process_wrapper"></div>
+    <!-- task  -->
+    <%-include("../task-item/task-item.ejs")%>
+    <!-- task  -->
+  </div>
+</div>

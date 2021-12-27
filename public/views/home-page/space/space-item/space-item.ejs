@@ -1,0 +1,37 @@
+<div class="space margin_bottom_20" data-id="<%=space.id%>">
+  <!-- space sprint content main title  -->
+  <style>
+    .space_name_container:hover .actions_space {
+      display: flex;
+    }
+  </style>
+  <div class="space_name_container display_flex align_items_center justify_content_sb height_30 position_relative">
+    <div class="display_flex align_items_center cursor_pointer position_relative">
+      <i class="fas fa-sort-down position_absolute" style="left: -15px; top: 2px"></i>
+      <div
+        class="width_20 height_20 display_flex justify_content_center align_items_center font_weight_700 border_radius_5 margin_right_10"
+        style="background: <%=space.color%>;"
+      >
+        <%=space.name[0].toUpperCase()%>
+      </div>
+      <span class="text_transform_capitalize">
+        <%=space.name%>
+      </span>
+    </div>
+    <div class="actions_space display_flex align_items_center display_none opacity_0_5">
+      <div class="margin_right_10 cursor_pointer">
+        <i class="fas fa-ellipsis-h"></i>
+      </div>
+      <div class="cursor_pointer open_space_options">
+        <i class="fas fa-plus"></i>
+      </div>
+    </div>
+  </div>
+  <!-- sprint folder  -->
+  <div class="folder_wrapper">
+    <% for (let i = 0; i < space.folders.length; i++ ) { %>
+      <% const folder = space.folders[i]; %>
+      <%-include("../folder-item/folder-item", { folder: folder })%>
+    <% } %>
+  </div>
+</div>

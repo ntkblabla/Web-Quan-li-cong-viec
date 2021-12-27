@@ -1,0 +1,42 @@
+<div
+  class="create_folder_popup popup position_fixed overflow_auto z_index_1000 width_100_vw height_100_percent top_0 left_0 padding_top_70 padding_bottom_100 padding_bottom_xs_10 padding_top_xs_10 justify_content_center align_items_fs display_none"
+  style="background: rgba(0, 0, 0, 0.7)"
+>
+  <div class="width_100_percent height_100_percent position_absolute top_0 left_0 z_index_0 bg_close_popup"></div>
+  <div class="width_sm_95_percent position_relative z_index_1">
+    <div class="close_icon position_absolute right_5 top_5 z_index_1000 cursor_pointer padding_10">
+      <i class="far fa-times font_size_24"></i>
+    </div>
+    <div class="width_650 bg_lighter_primary_color border_radius_15">
+      <!-- step name -->
+      <div class="step_create_name step_create_folder">
+        <div class="display_flex align_items_center justify_content_center padding_30">
+          <div class="text_align_center">
+            <h3 class="margin_top_10 font_size_24 magin_y_0 text_align_center">Create Folder</h3>
+          </div>
+        </div>
+        <div class="bg_primary padding_y_30 padding_x_40 border_bottom_left_radius_15 border_bottom_right_radius_15">
+          <form class="width_100_percent">
+            <label class="color_white display_block">Folder name</label>
+            <div
+              class="border_width_0 border_bottom_width_1 border_bottom_color_red border_style_solid padding_bottom_5"
+            >
+              <input
+                class="name_folder width_100_percent border_none padding_y_10 font_size_20 bg_primary input_focus_none text_transform_capitalize"
+                placeholder="Enter Folder name..."
+                required
+              />
+            </div>
+            <button
+              type="submit"
+              class="create_folder_btn margin_top_30 padding_x_25 padding_y_15 bg_highlight color_white border_none border_radius_5 font_weight_600 width_100_percent"
+            >
+              CREATE FOLDER
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- end step name-->
+    </div>
+  </div>
+</div>

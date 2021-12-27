@@ -1,0 +1,12 @@
+<div class="content flex_1 bg_whitesmoke min_height_100_vh max_height_100_vh display_flex flex_direction_col">
+  <%-include("tasks/navbar/navbar.ejs")%>
+  <%-include("tasks/tasks.ejs", {
+    workspace: workspace,
+    workspaceDenote: workspaceDenote,
+    spaceList: spaceList,
+  })%>
+  <%-include("tasks/items/edit-status/edit-status.ejs")%>
+  <%-include("tasks/items/edit-assign/edit-assign.ejs")%>
+  <%-include("tasks/items/edit-estimate/edit-estimate.ejs")%>
+  <%-include("task-detail/task-detail.ejs")%>
+</div>

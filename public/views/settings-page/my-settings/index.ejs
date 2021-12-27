@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="<%=baseUrl%>/public/styles/atomics-css/atomics-style.css" />
+    <link rel="stylesheet" href="<%=baseUrl%>/public/styles/font-awesome/css/all.css" />
+    <script type="module" src="<%=baseUrl%>/public/views/settings-page/my-settings/index.js"></script>
+  </head>
+
+  <body>
+    <div class="my-settings-page display_flex">
+      <%- include("../common/sidebar-settings.ejs");%>
+      <form class="content flex_1 bg_whitesmoke padding_y_40 padding_x_40">
+        <div class="primary_text_hover_color font_size_22 font_weight_600 margin_y_10">My Settings</div>
+        <div class="display_flex margin_top_20">
+          <div
+            id="user_avatar"
+            class="
+              display_flex
+              user_avatar
+              font_weight_600
+              border_radius_50_percent
+              width_60
+              height_60
+              bg_highlight
+              align_items_center
+              justify_content_center
+              font_size_22
+            "
+          >
+            <%= user.name[0].toUpperCase() %>
+          </div>
+
+          <div class="my_settings_contents margin_left_50 display_flex flex_direction_col flex_1">
+            <div class="user_fullname margin_bottom_30 width_100_percent">
+              <label class="user_fullname display_block margin_bottom_10 font_weight_600">Full name</label>
+              <div class="user_fullname border_width_0 border_bottom_width_1 border_color_secondary border_style_solid">
+                <input
+                  type="text"
+                  class="input_focus_none width_100_percent border_none font_size_22 bg_whitesmoke padding_y_5"
+                  name="fullname"
+                  maxlength="70"
+                  id="user_fullname"
+                  placeholder="Enter your name"
+                  value="<%=user.name%>"
+                  required
+                />
+              </div>
+            </div>
+            <div class="user_email margin_bottom_30">
+              <label class="user_email display_block margin_bottom_10 font_weight_600">Email</label>
+              <div class="user_email border_width_0 border_bottom_width_1 border_color_secondary border_style_solid">
+                <input
+                  type="text"
+                  class="input_focus_none width_100_percent border_none font_size_22 bg_whitesmoke padding_y_5"
+                  name="email"
+                  maxlength="70"
+                  id="user_email"
+                  placeholder="Enter your email"
+                  value="<%=user.email%>"
+                  required
+                />
+              </div>
+            </div>
+            <div class="user_password margin_bottom_30">
+              <label class="user_password display_block margin_bottom_10 font_weight_600">New password</label>
+              <div class="user_password border_width_0 border_bottom_width_1 border_color_secondary border_style_solid">
+                <input
+                  type="password"
+                  class="input_focus_none width_100_percent border_none font_size_22 bg_whitesmoke padding_y_5"
+                  name="password"
+                  maxlength="70"
+                  id="user_password"
+                  placeholder="Enter new password "
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="margin_top_20 text_align_right">
+          <button type="submit" class="btn_save_user_info border_radius_5 font_weight_600 bg_highlight border_none padding_x_20 padding_y_10 color_white font_size_18">Save</button>
+        </div>
+        <!-- </div> -->
+
+        <!-- <div class="save_btn bg_white"></div> -->
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+.box_shadow_red {
+  box-shadow: 0 0 5px 2px #f42c2c;
+}
+
+.box_shadow_options {
+  box-shadow: rgba(0, 0, 0, 40%) 0px 2px 16px 0px;
+}

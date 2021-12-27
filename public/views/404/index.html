@@ -1,0 +1,353 @@
+<div id="add_new_space_wrapper">
+  <button
+    class="text_transform_uppercase width_100_percent border_none padding_y_8 border_radius_5 cursor_pointer button_add_space"
+  >
+    <i class="fas fa-plus margin_right_10"></i>
+    <span>Add New</span>
+  </button>
+  <div
+    class="create_space_popup popup position_fixed overflow_auto z_index_1000 width_100_vw height_100_percent top_0 left_0 padding_top_70 padding_bottom_100 padding_bottom_xs_10 padding_top_xs_10 justify_content_center align_items_fs display_none"
+    style="background: rgba(0, 0, 0, 0.7)"
+  >
+    <div class="width_100_percent height_100_percent position_absolute top_0 left_0 z_index_0 bg_close_popup"></div>
+    <div class="width_sm_95_percent position_relative z_index_1">
+      <div class="close_icon position_absolute right_5 top_5 z_index_1000 cursor_pointer padding_10">
+        <i class="far fa-times font_size_24"></i>
+      </div>
+      <div class="width_650 bg_lighter_primary_color border_radius_15">
+        <div class="step_create_name display_none step_create_space">
+          <div class="display_flex align_items_center justify_content_center padding_30">
+            <div class="text_align_center">
+              <svg width="123" height="97" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <circle fill="#7B67EE" cx="61.5" cy="56.5" r="39.5"></circle>
+                  <path d="M54.57 17.6A39.5 39.5 0 0 0 88.44 85.4 39.5 39.5 0 1 1 54.56 17.6z" fill="#6C5AD4"></path>
+                  <path
+                    d="M22.25 49.42a39.89 39.89 0 0 0-.54 10.1c-2.55 2.88-3.67 5.68-3.01 8.16 2.2 8.19 23.14 9.7 46.77 3.36 23.64-6.34 41.02-18.11 38.83-26.3-.73-2.74-3.57-4.73-7.9-5.93a39.65 39.65 0 0 0-5.3-7.98c17.32-.7 29.74 2.67 31.64 9.76 3.04 11.32-21.92 27.84-55.75 36.9C33.17 86.57 3.3 84.74.26 73.42c-1.88-7 6.96-16 21.99-24z"
+                    fill="#C1B6FF"
+                    opacity=".4"
+                  ></path>
+                  <path
+                    d="M22 50.97a39.7 39.7 0 0 0-.2 1.54C12.4 58.61 7.24 65.1 8.66 70.37c2.7 10.11 28.57 11.97 57.76 4.15 29.19-7.82 50.65-22.36 47.94-32.47-1.46-5.45-9.64-8.5-21.45-8.94-.26-.36-.54-.72-.82-1.08 15.21-.26 25.97 2.95 27.68 9.36 2.89 10.77-20.86 26.49-53.03 35.11-32.18 8.62-60.6 6.88-63.5-3.89C1.55 66.3 9.04 58.26 22 50.97zm-.32 3.13c-.05.72-.07 1.45-.08 2.18-5.35 4.38-8.05 8.78-7.05 12.5 2.4 9 25.38 10.64 51.3 3.7 25.94-6.95 45.01-19.87 42.6-28.85-1.05-3.94-6.05-6.47-13.52-7.48-.36-.6-.74-1.2-1.13-1.77 9.9.72 16.67 3.57 17.95 8.36 2.58 9.62-17.83 23.44-45.58 30.88-27.76 7.44-52.35 5.67-54.92-3.95-1.24-4.6 2.81-10.19 10.43-15.57z"
+                    fill="#C1B6FF"
+                    opacity=".4"
+                  ></path>
+                  <circle fill="#B4A7FF" cx="34.5" cy="29.5" r="12.5"></circle>
+                  <path d="M29.45 18.06a12.5 12.5 0 0 0 15.1 18.88 12.5 12.5 0 1 1-15.1-18.88z" fill="#9A8CED"></path>
+                  <path
+                    d="M104.72 6.72l1.84-5.24a1 1 0 0 1 1.88 0l1.84 5.24 5.24 1.84a1 1 0 0 1 0 1.88l-5.24 1.84-1.84 5.24a1 1 0 0 1-1.88 0l-1.84-5.24-5.24-1.84a1 1 0 0 1 0-1.88l5.24-1.84zM75.93 4.93l.63-1.8a1 1 0 0 1 1.88 0l.63 1.8 1.8.63a1 1 0 0 1 0 1.88l-1.8.63-.63 1.8a1 1 0 0 1-1.88 0l-.63-1.8-1.8-.63a1 1 0 0 1 0-1.88l1.8-.63zM17.78 92.78l.28-.8a1 1 0 0 1 1.88 0l.28.8.8.28a1 1 0 0 1 0 1.88l-.8.28-.28.8a1 1 0 0 1-1.88 0l-.28-.8-.8-.28a1 1 0 0 1 0-1.88l.8-.28z"
+                    fill="#E6E2FF"
+                  ></path>
+                </g>
+              </svg>
+              <h3 class="margin_top_10 font_size_24 magin_y_0 text_align_center">Create new Space</h3>
+            </div>
+          </div>
+          <div class="bg_primary padding_y_30 padding_x_40 border_bottom_left_radius_15 border_bottom_right_radius_15">
+            <form class="width_100_percent">
+              <label class="color_white display_block">Space name</label>
+              <div
+                class="border_width_0 border_bottom_width_1 border_bottom_color_red border_style_solid padding_bottom_5"
+              >
+                <input
+                  class="name_space width_100_percent border_none padding_y_10 font_size_20 bg_primary input_focus_none"
+                  placeholder="Enter Space name..."
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                class="next_to_step_color margin_top_30 padding_x_25 padding_y_15 bg_highlight color_white border_none border_radius_5 font_weight_600 width_100_percent"
+              >
+                NEXT
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="step_create_color display_none step_create_space">
+          <div class="display_flex align_items_center justify_content_center padding_30 position_relative">
+            <div
+              class="position_absolute cursor_pointer padding_right_20 back_to_step_name"
+              style="left: 43px; top: 46px"
+            >
+              <i class="far fa-chevron-left font_size_20"></i>
+            </div>
+            <div class="text_align_center">
+              <h3 class="font_size_24 margin_y_10 text_align_center">Space color or avatar</h3>
+            </div>
+          </div>
+          <div class="bg_primary padding_y_30 padding_x_40 border_bottom_left_radius_15 border_bottom_right_radius_15">
+            <form class="width_100_percent">
+              <div class="display_flex">
+                <div class="margin_right_30">
+                  <div
+                    class="display_flex align_items_center justify_content_center width_140 height_140 border_radius_25 font_size_40 font_weight_600 space_avatar"
+                    style="background: #7b68ee"
+                  >
+                    C
+                  </div>
+                </div>
+                <div class="flex_1 display_flex flex_wrap margin_top_10">
+                  <style>
+                    .color_item {
+                      cursor: pointer;
+                      transition: all 0.15s linear;
+                    }
+                    .color_item.active {
+                      width: 50px;
+                      height: 50px;
+                    }
+                    .color_item:hover {
+                      width: 50px;
+                      height: 50px;
+                    }
+                  </style>
+                  <div class="width_60 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item active"
+                      style="background-color: #7b68ee"
+                      value="#7b68ee"
+                    ></div>
+                  </div>
+                  <div class="width_60 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #ffa12f"
+                      value="#ffa12f"
+                    ></div>
+                  </div>
+                  <div class="width_60 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #ff5722"
+                      value="#ff5722"
+                    ></div>
+                  </div>
+                  <div class="width_60 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #f42c2c"
+                      value="#f42c2c"
+                    ></div>
+                  </div>
+                  <div class="width_60 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #f8306d"
+                      value="#f8306d"
+                    ></div>
+                  </div>
+                  <div class="width_60 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #ff00fc"
+                      value="#ff00fc"
+                    ></div>
+                  </div>
+                  <div class="width_60 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #4169e1"
+                      value="#4169e1"
+                    ></div>
+                  </div>
+                  <div class="width_60 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #5f81ff"
+                      value="#5f81ff"
+                    ></div>
+                  </div>
+                  <div class="width_60 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #07a092"
+                      value="#07a092"
+                    ></div>
+                  </div>
+                  <div class="width_60 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #2ea52c"
+                      value="#2ea52c"
+                    ></div>
+                  </div>
+                  <div class="width_60 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #757380"
+                      value="#757380"
+                    ></div>
+                  </div>
+                  <div class="width_60 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #202020"
+                      value="#202020"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <button
+                type="submit"
+                class="next_to_task_status margin_top_30 padding_x_25 padding_y_15 bg_highlight color_white border_none border_radius_5 font_weight_600 width_100_percent"
+              >
+                NEXT
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="step_task_status display_none step_create_space">
+          <div class="display_flex align_items_center justify_content_center padding_30 position_relative">
+            <div
+              class="position_absolute cursor_pointer padding_right_20 back_to_step_color"
+              style="left: 43px; top: 46px"
+            >
+              <i class="far fa-chevron-left font_size_20"></i>
+            </div>
+            <div class="text_align_center">
+              <h3 class="font_size_24 margin_y_10 text_align_center">What task statuses do you want?</h3>
+            </div>
+          </div>
+          <div class="bg_primary padding_y_30 padding_x_40 border_bottom_left_radius_15 border_bottom_right_radius_15">
+            <form class="width_100_percent">
+              <div class="display_flex justify_content_center">
+                <div>
+                  <div class="active_statuses">
+                    <div>
+                      <span class="opacity_0_5">ACTIVE STATUSES</span>
+                    </div>
+                    <div class="statuses" style="max-height: 182px; overflow: auto">
+                      <div
+                        class="status_item margin_top_10 display_flex align_items_center padding_y_5 padding_x_15 bg_lighter_primary_color border_width_1 border_color_black border_style_solid border_radius_5"
+                      >
+                        <div
+                          class="cursor_pointer color width_10 height_10 flex_none border_radius_2 margin_right_10"
+                          style="background-color: red"
+                        ></div>
+                        <input
+                          class="color_input input_focus_none border_none padding_5 width_100_percent"
+                          value="TODO"
+                        />
+                        <div class="flex_none padding_5 cursor_pointer">
+                          <i class="far fa-ellipsis-h"></i>
+                        </div>
+                      </div>
+                      <div class="add_new_status margin_top_10">
+                        <input
+                          name="status"
+                          class="input_add_status input_focus_none border_none padding_5 width_100_percent text_transform_uppercase"
+                          placeholder="ENTER A STATUS"
+                          style="display: none"
+                        />
+                        <button
+                          class="button_add_status color_white bg_highlight padding_x_10 padding_y_5 border_none button_focus_none border_radius_5"
+                          type="button"
+                        >
+                          <i class="far fa-plus"></i>
+                          Add Status
+                        </button>
+                      </div>
+                    </div>
+                    <div></div>
+                  </div>
+                  <div class="done_statuses margin_top_30">
+                    <div>
+                      <span class="opacity_0_5">DONE STATUSES</span>
+                    </div>
+                    <div class="statuses" style="max-height: 182px; overflow: auto">
+                      <div
+                        class="status_item margin_top_10 display_flex align_items_center padding_y_5 padding_x_15 bg_lighter_primary_color border_width_1 border_color_black border_style_solid border_radius_5"
+                      >
+                        <div
+                          class="cursor_pointer color width_10 height_10 flex_none border_radius_2 margin_right_10"
+                          style="background-color: green"
+                        ></div>
+                        <input
+                          class="color_input input_focus_none border_none padding_5 width_100_percent"
+                          value="DONE"
+                        />
+                        <div class="flex_none padding_5 cursor_pointer">
+                          <i class="far fa-ellipsis-h"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+              <button
+                type="submit"
+                class="next_to_step_finish margin_top_30 padding_x_25 padding_y_15 bg_highlight color_white border_none border_radius_5 font_weight_600 width_100_percent"
+              >
+                NEXT
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="step_finish display_none step_create_space">
+          <div class="display_flex align_items_center justify_content_center padding_30 position_relative">
+            <div
+              class="position_absolute cursor_pointer padding_right_20 back_to_step_status"
+              style="left: 43px; top: 46px"
+            >
+              <i class="far fa-chevron-left font_size_20"></i>
+            </div>
+            <div class="text_align_center">
+              <h3 class="font_size_24 margin_y_10 text_align_center">All good?</h3>
+            </div>
+          </div>
+          <div class="bg_primary padding_y_30 padding_x_40 border_bottom_left_radius_15 border_bottom_right_radius_15">
+            <form class="width_100_percent">
+              <div class="width_100_percent border_bottom_width_1 border_width_0 border_color_black border_style_solid">
+                <div
+                  class="display_flex width_100_percent justify_content_sb height_56 align_items_center padding_x_15 bg_lighter_primary_color border_bottom_width_0 border_width_1 border_color_black border_style_solid"
+                >
+                  <span>Space name</span>
+                  <span class="space_name">a</span>
+                </div>
+                <div
+                  class="display_flex width_100_percent justify_content_sb height_56 align_items_center padding_x_15 bg_lighter_primary_color border_bottom_width_0 border_width_1 border_color_black border_style_solid"
+                >
+                  <span>Avatar</span>
+                  <div
+                    class="space_avatar width_20 height_20 border_radius_5 display_flex align_items_center justify_content_center font_weight_600"
+                    style="background-color: teal"
+                  >
+                    A
+                  </div>
+                </div>
+                <div
+                  class="display_flex width_100_percent justify_content_sb height_56 align_items_center padding_x_15 bg_lighter_primary_color border_bottom_width_0 border_width_1 border_color_black border_style_solid"
+                >
+                  <span>Task statuses</span>
+                  <div class="space_status display_flex">
+                    <div
+                      class="space_status_item margin_right_5 width_10 height_10 border_radius_2"
+                      style="background-color: green"
+                    ></div>
+                    <div
+                      class="space_status_item margin_right_5 width_10 height_10 border_radius_2"
+                      style="background-color: green"
+                    ></div>
+                    <div
+                      class="space_status_item margin_right_5 width_10 height_10 border_radius_2"
+                      style="background-color: green"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <button
+                type="submit"
+                class="button_create_space margin_top_30 padding_x_25 padding_y_15 bg_highlight color_white border_none border_radius_5 font_weight_600 width_100_percent text_transform_uppercase"
+              >
+                Create Space
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+.primary_theme_color {
+  color: #2b343b;
+}
+
+.primary_theme_hover_color {
+  color: #1e272e;
+}
+
+.primary_theme_color-hover:hover {
+  color: #2b343b;
+}
+
+.primary_theme_hover_color-hover:hover {
+  color: #1e272e;
+}
+
+.highlight_theme_color-hover:hover {
+  color: #f42c2c;
+}
+
+.highlight_theme_color {
+  color: #f42c2c;
+}
+
+.primary_text_color {
+  color: #333;
+}
+
+.secondary_heading_text_color {
+  color: #323232;
+}
+
+.primary_text_hover_color {
+  color: #a6a6a6;
+}
+
+.primary_text_hover_color-hover:hover {
+  color: #a6a6a6;
+}
+
+.color_red {
+  color: #f42c2c;
+}
+
+.color_black {
+  color: black;
+}
+
+.color_text_black {
+  color: #333;
+}
+
+.color_white {
+  color: #ffffff;
+}
+
+.color_white-hover:hover {
+  color: #ffffff;
+}
+
+.bg_white_smoke-hover:hover {
+  background-color: whitesmoke;
+}
+
+.bg_event_caption {
+  background-color: #007dc575;
+}

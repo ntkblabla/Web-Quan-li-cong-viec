@@ -1,0 +1,119 @@
+.rotate_-90 {
+  transform: rotate(-90deg);
+}
+
+.rotate_-45 {
+  transform: rotate(-45deg);
+}
+
+.rotate_-30 {
+  transform: rotate(-30deg);
+}
+
+.rotate_-25 {
+  transform: rotate(-25deg);
+}
+
+.rotate_-20 {
+  transform: rotate(-20deg);
+}
+
+.rotate_-15 {
+  transform: rotate(-15deg);
+}
+
+.rotate_-10 {
+  transform: rotate(-10deg);
+}
+
+.rotate_-5 {
+  transform: rotate(-5deg);
+}
+
+.rotate_0 {
+  transform: rotate(0deg);
+}
+
+.rotate_5 {
+  transform: rotate(5deg);
+}
+
+.rotate_10 {
+  transform: rotate(10deg);
+}
+
+.rotate_15 {
+  transform: rotate(15deg);
+}
+
+.rotate_20 {
+  transform: rotate(20deg);
+}
+
+.rotate_25 {
+  transform: rotate(25deg);
+}
+
+.rotate_30 {
+  transform: rotate(30deg);
+}
+
+.rotate_35 {
+  transform: rotate(35deg);
+}
+
+.rotate_40 {
+  transform: rotate(40deg);
+}
+
+.rotate_45 {
+  transform: rotate(45deg);
+}
+
+.rotate_50 {
+  transform: rotate(50deg);
+}
+
+.rotate_55 {
+  transform: rotate(55deg);
+}
+
+.rotate_60 {
+  transform: rotate(60deg);
+}
+
+.rotate_65 {
+  transform: rotate(65deg);
+}
+
+.rotate_70 {
+  transform: rotate(70deg);
+}
+
+.rotate_75 {
+  transform: rotate(75deg);
+}
+
+.rotate_80 {
+  transform: rotate(80deg);
+}
+
+.rotate_85 {
+  transform: rotate(85deg);
+}
+
+.rotate_90 {
+  transform: rotate(90deg);
+}
+
+.rotate_180 {
+  transform: rotate(180deg);
+}
+
+.object_fit_cover {
+  object-fit: cover;
+}
+
+.object_fit_contain {
+  object-fit: contain;
+}

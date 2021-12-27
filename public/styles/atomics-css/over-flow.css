@@ -1,0 +1,137 @@
+.overflow_hidden {
+  overflow: hidden;
+}
+
+.overflow_auto {
+  overflow: auto;
+}
+
+.overflow_scroll {
+  overflow: scroll;
+}
+
+.overflow_x_hidden {
+  overflow-x: hidden;
+}
+
+.overflow_x_auto {
+  overflow-x: auto;
+}
+
+.overflow_x_scroll {
+  overflow-x: scroll;
+}
+
+.overflow_y_hidden {
+  overflow-y: hidden;
+}
+
+.overflow_y_auto {
+  overflow-y: auto;
+}
+
+.text_over_flow_1 {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text_over_flow_2 {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text_over_flow_3 {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 576px) {
+  .text_over_flow_sx_clip {
+    max-height: 14px;
+    text-overflow: clip;
+    overflow: hidden;
+  }
+}
+
+.hover_underline:hover {
+  text-decoration: underline;
+}
+
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+.float_none {
+  float: none;
+}
+
+.float_inherit {
+  float: inherit;
+}
+
+@media (max-width: 1024px) {
+  .float_md_left {
+    float: left;
+  }
+
+  .float_md_right {
+    float: right;
+  }
+
+  .float_md_none {
+    float: none;
+  }
+
+  .float_md_inherit {
+    float: inherit;
+  }
+}
+
+@media (max-width: 768px) {
+  .float_sm_left {
+    float: left;
+  }
+
+  .float_sm_right {
+    float: right;
+  }
+
+  .float_sm_none {
+    float: none;
+  }
+
+  .float_sm_inherit {
+    float: inherit;
+  }
+}
+
+@media (max-width: 576px) {
+  .float_xs_left {
+    float: left;
+  }
+
+  .float_xs_right {
+    float: right;
+  }
+
+  .float_xs_none {
+    float: none;
+  }
+
+  .float_xs_inherit {
+    float: inherit;
+  }
+}

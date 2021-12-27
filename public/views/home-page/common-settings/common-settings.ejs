@@ -1,0 +1,73 @@
+<div
+  class="common-settings position_absolute bottom_0 bg_primary display_none z_index_1000 border_radius_5"
+  style="box-shadow: 0 2px 16px 0 rgb(0 0 0 / 40%); left: 85px"
+>
+  <div class="display_flex">
+    <div
+      class="workspaces width_40 padding_y_7 border_width_0 border_right_width_1 border_style_solid border_color_primary display_flex flex_direction_col align_items_center"
+    >
+      <a
+        class="workspaces_item width_32 height_32 display_flex align_items_center justify_content_center border_radius_50_percent cursor_pointer margin_bottom_5"
+        style="background-color: rgb(123, 104, 238)"
+      >
+        D
+      </a>
+      <div
+        title="Add workspace"
+        class="add_workspace width_32 height_32 display_flex align_items_center justify_content_center border_radius_50_percent cursor_pointer margin_bottom_5 bg_red color_red"
+      >
+        <a
+          href="/create-workspace"
+          class="width_100_percent height_100_percent display_flex align_items_center justify_content_center"
+        >
+          <i class="far fa-plus font_size_12"></i>
+        </a>
+      </div>
+    </div>
+    <div class="display_flex" style="width: 380px">
+      <div
+        class="col_6 padding_y_15 padding_x_20 border_width_0 border_right_width_1 border_style_solid border_color_primary"
+      >
+        <div class="display_flex align_items_center cursor_pointer margin_bottom_10">
+          <div
+            class="width_32 height_32 display_flex align_items_center justify_content_center border_radius_50_percent margin_right_10"
+            style="background-color: <%=workspace.color%>"
+          >
+            <%=workspaceDenote%>
+          </div>
+          <span class="color_white font_size_12 font_weight_600">
+            <%=workspace.name%>
+          </span>
+        </div>
+        <div class="workspace_settings padding_y_10 cursor_pointer highlight_theme_color-hover">
+          <a href="/settings/workspaces/<%=workspace.id%>/info">
+            <span class="font_size_12">Settings</span>
+          </a>
+        </div>
+        <div class="workspace_settings padding_y_10 cursor_pointer highlight_theme_color-hover">
+          <a href="/settings/workspaces/<%=workspace.id%>/users">
+            <span class="font_size_12">Member</span>
+          </a>
+        </div>
+      </div>
+      <div class="col_6 padding_y_15 padding_x_20">
+        <div class="display_flex align_items_center user_info margin_bottom_10 cursor_pointer">
+          <div
+            class="user_avatar bg_highlight width_32 height_32 display_flex align_items_center justify_content_center border_radius_50_percent margin_right_10"
+          >
+            C
+          </div>
+          <span class="user_name color_white font_size_12 font_weight_600">User name</span>
+        </div>
+        <div class="my_settings padding_y_10 cursor_pointer highlight_theme_color-hover">
+          <a href="/settings/profile.<%=workspace.id%>">
+            <span class="font_size_12">My settings</span>
+          </a>
+        </div>
+        <div class="logout padding_y_10 cursor_pointer highlight_theme_color-hover">
+          <span class="font_size_12">Log out</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

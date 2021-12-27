@@ -1,0 +1,19 @@
+.list_style_none {
+  list-style: none;
+}
+
+.text_transform_capitalize {
+  text-transform: capitalize;
+}
+
+.text_transform_lowercase {
+  text-transform: lowercase;
+}
+
+.text_transform_uppercase {
+  text-transform: uppercase;
+}
+
+.white_space_nowrap {
+  white-space: nowrap;
+}

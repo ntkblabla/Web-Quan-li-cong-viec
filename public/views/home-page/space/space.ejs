@@ -1,0 +1,40 @@
+<div
+  class="space_wrapper padding_left_20 padding_right_20 border_width_0 border_bottom_width_1 border_style_solid border_color_primary padding_bottom_20"
+>
+  <!-- space sprint title  -->
+  <div class="title padding_y_20 display_flex justify_content_sb">
+    <span class="font_weight_700 text_transform_uppercase">Space</span>
+    <div class="icon display_flex">
+      <div class="margin_right_15">
+        <i class="fas fa-search"></i>
+      </div>
+      <div>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </div>
+  <!-- space sprint add space  -->
+  <%- include("create-space/create-space"); %>
+
+  <!-- create folder  -->
+  <%- include("create-folder/create-folder"); %>
+
+  <!-- create sprint -->
+  <%- include("create-sprint/create-sprint"); %>
+
+  <!-- space sprint everything  -->
+  <!-- space sprint content main -->
+  <div class="overflow_auto spaces_list padding_right_10 margin_top_20" style="max-height: 400px; margin-right: -10px;">
+    <%-include("items/space-actions")%>
+    <%-include("items/folder-actions")%>
+    <div class="space_wrapper_container">
+      <% for (let i = 0; i < spaceList.length; i++) { %>
+        <% const space = spaceList[i]; %>
+        <%-include("space-item/space-item", {space: space});%>
+      <% } %>
+    </div>
+  </div>
+  <div class="space_template">
+    <%-include("space-item/space-item-temp");%>
+  </div>
+</div>

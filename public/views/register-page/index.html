@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2UP | Register</title>
+    <link rel="stylesheet" href="public/styles/atomics-css/atomics-style.css" />
+    <link rel="stylesheet" href="public/styles/font-awesome/css/all.css" />
+    <script type="module" src="public/views/register-page/index.js"></script>
+    <style>
+      input {
+        background-color: transparent;
+        color: #333;
+      }
+      body {
+        color: #333;
+      }
+      .line {
+        height: 2px;
+        width: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="login min_height_100_vh min_width_100_vw bg_whitesmoke display_flex align_items_center justify_content_center height_100_percent"
+    >
+      <form class="width_400 bg_white border_radius_10 padding_x_40 padding_y_30 margin_bottom_100 box_shadow_primary">
+        <div class="logo text_align_center margin_bottom_30">
+          <a href="/"
+            ><svg width="170" height="25" viewBox="0 0 170 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M52.8349 14.6093H48.1557V11.9422H55.8336V12.8423C55.8336 19.3601 51.6569 22.6856 46.6975 22.6856C41.3839 22.6856 37.512 18.735 37.512 13.3258C37.512 7.91651 41.3839 3.96585 46.6893 3.96585C49.2596 3.96585 51.4674 4.89101 53.082 6.4246L51.0472 8.52495C49.9433 7.44977 48.4275 6.78299 46.6975 6.78299C43.0727 6.78299 40.4283 9.65847 40.4283 13.3258C40.4283 17.018 43.0727 19.8685 46.6975 19.8685C49.8857 19.8685 52.2994 17.6598 52.8349 14.6093ZM58.7746 22.3022V4.34925H67.5811V7.0497H61.6415V11.6171H67.5811V14.2842H61.6415V19.6351H67.5811V22.3022H58.7746ZM71.3542 4.34925H74.2211L79.3781 11.3504L84.3375 4.34925H87.2044V22.3022H84.3375V9.35009L79.3781 16.0929L74.2211 9.35009V22.3022H71.3542V4.34925ZM98.7789 4.34925H104.513C107.66 4.34925 109.9 6.39959 109.9 9.58346C109.9 12.734 107.66 14.8177 104.513 14.8177H101.646V22.3022H98.7789V4.34925ZM101.654 7.14972V12.0255H104.348C105.855 12.0255 106.893 11.1004 106.893 9.59179C106.893 8.08321 105.864 7.15805 104.348 7.15805H101.654V7.14972ZM125.157 22.3022H122.085L120.025 16.0429H114.744L112.603 22.3022H109.53L115.947 4.34925H118.946L125.157 22.3022ZM115.642 13.3508H119.119L117.405 8.19989L115.642 13.3508ZM141.485 14.6093H136.806V11.9422H144.484V12.8423C144.484 19.3601 140.307 22.6856 135.348 22.6856C130.034 22.6856 126.162 18.735 126.162 13.3258C126.162 7.91651 130.034 3.96585 135.348 3.96585C137.918 3.96585 140.126 4.89101 141.741 6.4246L139.706 8.52495C138.602 7.44977 137.086 6.78299 135.356 6.78299C131.731 6.78299 129.087 9.65847 129.087 13.3258C129.087 17.018 131.731 19.8685 135.356 19.8685C138.544 19.8685 140.958 17.6598 141.485 14.6093ZM147.425 22.3022V4.34925H156.232V7.0497H150.292V11.6171H156.232V14.2842H150.292V19.6351H156.232V22.3022H147.425ZM166.727 9.0417C166.727 7.58312 165.895 6.65797 164.536 6.65797C163.152 6.65797 162.245 7.60813 162.245 8.80833C162.245 10.0419 162.822 10.7086 164.536 11.1921L165.368 11.4254C168.309 12.2422 170.5 13.4508 170.5 17.068C170.5 20.3269 167.987 22.6606 164.585 22.6606C161.216 22.6606 158.72 20.3519 158.72 16.6596H161.463C161.463 18.535 162.797 19.9685 164.585 19.9685C166.496 19.9685 167.707 18.71 167.707 17.068C167.707 15.4511 166.702 14.6843 164.61 14.0925L163.827 13.8842C160.911 13.0674 159.527 11.3671 159.527 8.80833C159.527 5.88284 161.669 3.95752 164.536 3.95752C167.658 3.95752 169.446 5.69948 169.446 9.03337L166.727 9.0417ZM90.4667 13.3258L92.9793 10.7337L95.5249 13.3258L93.0122 15.9179L90.4667 13.3258Z"
+                fill="#0A0A3A"
+              ></path>
+              <path
+                d="M23.0541 0.508135L0.621674 7.59265C0.531055 7.61766 0.481626 7.71767 0.50634 7.81769L2.23635 13.5603C2.26106 13.652 2.35992 13.7103 2.45054 13.677L18.9103 8.47613C19.6929 8.22609 20.3602 7.676 20.7392 6.92587C21.7607 4.94221 22.6092 2.8752 23.26 0.733172C23.3095 0.591482 23.1859 0.466461 23.0541 0.508135Z"
+                fill="#FFBB1C"
+              ></path>
+              <path
+                d="M17.6746 10.4422L3.73567 14.8429C3.66153 14.8679 3.6121 14.9512 3.63682 15.0346L5.1032 19.8854C5.12792 19.9604 5.2103 20.0104 5.28444 19.9854L14.1734 17.1766C14.8407 16.9682 15.3926 16.4932 15.7221 15.8681C16.5871 14.1928 17.3039 12.4425 17.8476 10.6339C17.8888 10.5172 17.7817 10.4088 17.6746 10.4422Z"
+                fill="#E8486C"
+              ></path>
+              <path
+                d="M11.6056 19.5582L6.56389 21.1502C6.49799 21.1668 6.46503 21.2419 6.48151 21.3085L7.71723 25.4092C7.7337 25.4759 7.80785 25.5176 7.87375 25.4926L8.64813 25.2509C9.20833 25.0758 9.6779 24.6758 9.95799 24.1423C10.6912 22.7254 11.2926 21.2502 11.7539 19.7166C11.7951 19.6166 11.7045 19.5249 11.6056 19.5582Z"
+                fill="#476DF2"
+              ></path></svg
+          ></a>
+        </div>
+        <div class="form_input">
+          <div class="margin_bottom_20">
+            <div class="label font_size_16 margin_bottom_10"><span>Họ và tên</span></div>
+            <div>
+              <input
+                id="input_name"
+                required
+                type="text"
+                name="name"
+                class="input width_100_percent border_width_1 border_color_secondary border_style_solid border_radius_5 padding_y_10 padding_x_10"
+                placeholder="Nhập họ và tên của bạn"
+              />
+            </div>
+          </div>
+          <div class="margin_bottom_20">
+            <div class="label font_size_16 margin_bottom_10"><span>Email</span></div>
+            <div>
+              <input
+                id="input_email"
+                required
+                type="text"
+                name="email"
+                class="input width_100_percent border_width_1 border_color_secondary border_style_solid border_radius_5 padding_y_10 padding_x_10"
+                placeholder="Nhập email của bạn"
+              />
+            </div>
+          </div>
+          <div class="margin_bottom_25">
+            <div class="label font_size_16 margin_bottom_10"><span>Mật khẩu</span></div>
+            <div>
+              <input
+                required
+                type="password"
+                class="input width_100_percent border_width_1 border_color_secondary border_style_solid border_radius_5 padding_y_10 padding_x_10"
+                placeholder="Nhập mật khẩu của bạn"
+                id="input_password"
+              />
+            </div>
+          </div>
+          <div class="margin_bottom_25">
+            <div class="label font_size_16 margin_bottom_10"><span>Nhập lại mật khẩu</span></div>
+            <div>
+              <input
+                id="input_cf_password"
+                required
+                type="password"
+                class="input width_100_percent border_width_1 border_color_secondary border_style_solid border_radius_5 padding_y_10 padding_x_10"
+                placeholder="Nhập lại mật khẩu của bạn"
+              />
+            </div>
+          </div>
+          <button
+            id="button_submit"
+            type="submit"
+            class="bg_highlight bg_highlight_hover-hover padding_x_15 padding_y_10 border_none width_100_percent font_size_16 color_white button cursor_pointer border_radius_5"
+          >
+            Đăng ký
+          </button>
+        </div>
+        <div class="register margin_top_20">
+          <div class="display_flex align_items_center justify_content_center">
+            <div class="line height_2 bg_gray width_80"></div>
+            <div class="text_transform_uppercase margin_x_15"><span>Hoặc</span></div>
+            <div class="line height_2 bg_gray width_80"></div>
+          </div>
+          <div class="margin_top_15 text_align_center">
+            <span>Nếu bạn đã có tài khoản, đăng nhập <a class="color_red" href="/login">tại đây</a></span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

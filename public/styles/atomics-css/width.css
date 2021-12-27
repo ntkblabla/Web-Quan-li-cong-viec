@@ -1,0 +1,769 @@
+.width_10 {
+  width: 10px;
+}
+
+.width_20 {
+  width: 20px;
+}
+
+.width_24 {
+  width: 24px;
+}
+
+.width_30 {
+  width: 30px;
+}
+
+.width_32 {
+  width: 32px;
+}
+
+.width_35 {
+  width: 35px;
+}
+
+.width_40 {
+  width: 40px;
+}
+
+.width_45 {
+  width: 45px;
+}
+
+.width_50 {
+  width: 50px;
+}
+
+.width_55 {
+  width: 55px;
+}
+
+.width_60 {
+  width: 60px;
+}
+
+.width_65 {
+  width: 65px;
+}
+
+.width_100 {
+  width: 100px;
+}
+
+.width_105 {
+  width: 105px;
+}
+
+.width_110 {
+  width: 110px;
+}
+
+.width_115 {
+  width: 115px;
+}
+
+.width_120 {
+  width: 120px;
+}
+
+.width_125 {
+  width: 125px;
+}
+
+.width_130 {
+  width: 130px;
+}
+
+.width_140 {
+  width: 140px;
+}
+
+.width_150 {
+  width: 150px;
+}
+
+.width_180 {
+  width: 180px;
+}
+
+.width_200 {
+  width: 200px;
+}
+
+.width_210 {
+  width: 210px;
+}
+
+.width_250 {
+  width: 250px;
+}
+
+.width_275 {
+  width: 275px;
+}
+
+.width_300 {
+  width: 300px;
+}
+
+.width_400 {
+  width: 400px;
+}
+
+.width_650 {
+  width: 650px;
+}
+
+.width_10_vw {
+  width: 10vw;
+}
+
+.width_10_percent {
+  width: 10%;
+}
+
+.width_20_vw {
+  width: 20vw;
+}
+
+.width_20_percent {
+  width: 20%;
+}
+
+.width_25_vw {
+  width: 25vw;
+}
+
+.width_25_percent {
+  width: 25%;
+}
+
+.width_30_vw {
+  width: 30vw;
+}
+
+.width_30_percent {
+  width: 30%;
+}
+
+.width_33_vw {
+  width: 33vw;
+}
+
+.width_33_percent {
+  width: 33%;
+}
+
+.width_40_vw {
+  width: 40vw;
+}
+
+.width_40_percent {
+  width: 40%;
+}
+
+.width_49_vw {
+  width: 49vw;
+}
+
+.width_49_percent {
+  width: 49%;
+}
+
+.width_45_vw {
+  width: 45vw;
+}
+
+.width_45_percent {
+  width: 45%;
+}
+
+.width_50_vw {
+  width: 50vw;
+}
+
+.width_50_percent {
+  width: 50%;
+}
+
+.width_60_vw {
+  width: 60vw;
+}
+
+.width_60_percent {
+  width: 60%;
+}
+
+.width_65_vw {
+  width: 65vw;
+}
+
+.width_65_percent {
+  width: 65%;
+}
+
+.width_70_vw {
+  width: 70vw;
+}
+
+.width_70_percent {
+  width: 70%;
+}
+
+.width_75_vw {
+  width: 75vw;
+}
+
+.width_75_percent {
+  width: 75%;
+}
+
+.width_80_vw {
+  width: 80vw;
+}
+
+.width_80_percent {
+  width: 80%;
+}
+
+.width_90_vw {
+  width: 90vw;
+}
+
+.width_90_percent {
+  width: 90%;
+}
+
+.width_95_vw {
+  width: 95vw;
+}
+
+.width_95_percent {
+  width: 95%;
+}
+
+.width_100_vw {
+  width: 100vw;
+}
+
+.width_100_percent {
+  width: 100%;
+}
+
+.width_auto {
+  width: auto;
+}
+
+.width_fit_content {
+  width: fit-content;
+}
+
+@media (max-width: 1024px) {
+  .width_md_10 {
+    width: 10px;
+  }
+
+  .width_md_20 {
+    width: 20px;
+  }
+
+  .width_md_30 {
+    width: 30px;
+  }
+
+  .width_md_40 {
+    width: 40px;
+  }
+
+  .width_md_35 {
+    width: 35px;
+  }
+
+  .width_md_45 {
+    width: 45px;
+  }
+
+  .width_md_50 {
+    width: 50px;
+  }
+
+  .width_md_55 {
+    width: 55px;
+  }
+
+  .width_md_60 {
+    width: 60px;
+  }
+
+  .width_md_65 {
+    width: 65px;
+  }
+
+  .width_md_100 {
+    width: 100px;
+  }
+
+  .width_md_105 {
+    width: 105px;
+  }
+
+  .width_md_110 {
+    width: 110px;
+  }
+
+  .width_md_115 {
+    width: 115px;
+  }
+
+  .width_md_120 {
+    width: 120px;
+  }
+
+  .width_md_125 {
+    width: 125px;
+  }
+
+  .width_md_130 {
+    width: 130px;
+  }
+
+  .width_md_140 {
+    width: 140px;
+  }
+
+  .width_md_150 {
+    width: 150px;
+  }
+
+  .width_md_180 {
+    width: 180px;
+  }
+
+  .width_md_200 {
+    width: 200px;
+  }
+
+  .width_md_210 {
+    width: 210px;
+  }
+
+  .width_md_300 {
+    width: 300px;
+  }
+
+  .width_md_650 {
+    width: 650px;
+  }
+
+  .width_md_10_percent {
+    width: 10%;
+  }
+
+  .width_md_20_percent {
+    width: 20%;
+  }
+
+  .width_md_25_percent {
+    width: 25%;
+  }
+
+  .width_md_30_percent {
+    width: 30%;
+  }
+
+  .width_md_33_percent {
+    width: 33%;
+  }
+
+  .width_md_40_percent {
+    width: 40%;
+  }
+
+  .width_md_49_percent {
+    width: 49%;
+  }
+
+  .width_md_50_percent {
+    width: 50%;
+  }
+
+  .width_md_60_percent {
+    width: 60%;
+  }
+
+  .width_md_65_percent {
+    width: 65%;
+  }
+
+  .width_md_70_percent {
+    width: 70%;
+  }
+
+  .width_md_75_percent {
+    width: 75%;
+  }
+
+  .width_md_80_percent {
+    width: 80%;
+  }
+
+  .width_md_90_percent {
+    width: 90%;
+  }
+
+  .width_md_95_percent {
+    width: 95%;
+  }
+
+  .width_md_100_percent {
+    width: 100%;
+  }
+
+  .width_md_fit_content {
+    width: fit-content;
+  }
+
+  .width_md_auto {
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .width_sm_10 {
+    width: 10px;
+  }
+
+  .width_sm_20 {
+    width: 20px;
+  }
+
+  .width_sm_30 {
+    width: 30px;
+  }
+
+  .width_sm_40 {
+    width: 40px;
+  }
+
+  .width_sm_35 {
+    width: 35px;
+  }
+
+  .width_sm_45 {
+    width: 45px;
+  }
+
+  .width_sm_50 {
+    width: 50px;
+  }
+
+  .width_sm_55 {
+    width: 55px;
+  }
+
+  .width_sm_60 {
+    width: 60px;
+  }
+
+  .width_sm_65 {
+    width: 65px;
+  }
+
+  .width_sm_100 {
+    width: 100px;
+  }
+
+  .width_sm_105 {
+    width: 105px;
+  }
+
+  .width_sm_110 {
+    width: 110px;
+  }
+
+  .width_sm_115 {
+    width: 115px;
+  }
+
+  .width_sm_120 {
+    width: 120px;
+  }
+
+  .width_sm_125 {
+    width: 125px;
+  }
+
+  .width_sm_130 {
+    width: 130px;
+  }
+
+  .width_sm_140 {
+    width: 140px;
+  }
+
+  .width_sm_150 {
+    width: 150px;
+  }
+
+  .width_sm_180 {
+    width: 180px;
+  }
+
+  .width_sm_200 {
+    width: 200px;
+  }
+
+  .width_sm_210 {
+    width: 210px;
+  }
+
+  .width_sm_300 {
+    width: 300px;
+  }
+
+  .width_sm_650 {
+    width: 650px;
+  }
+
+  .width_sm_10_percent {
+    width: 10%;
+  }
+
+  .width_sm_20_percent {
+    width: 20%;
+  }
+
+  .width_sm_25_percent {
+    width: 25%;
+  }
+
+  .width_sm_30_percent {
+    width: 30%;
+  }
+
+  .width_sm_33_percent {
+    width: 33%;
+  }
+
+  .width_sm_40_percent {
+    width: 40%;
+  }
+
+  .width_sm_49_percent {
+    width: 49%;
+  }
+
+  .width_sm_50_percent {
+    width: 50%;
+  }
+
+  .width_sm_60_percent {
+    width: 60%;
+  }
+
+  .width_sm_65_percent {
+    width: 65%;
+  }
+
+  .width_sm_70_percent {
+    width: 70%;
+  }
+
+  .width_sm_75_percent {
+    width: 75%;
+  }
+
+  .width_sm_80_percent {
+    width: 80%;
+  }
+
+  .width_sm_90_percent {
+    width: 90%;
+  }
+
+  .width_sm_95_percent {
+    width: 95%;
+  }
+
+  .width_sm_100_percent {
+    width: 100%;
+  }
+
+  .width_sm_fit_content {
+    width: fit-content;
+  }
+
+  .width_sm_auto {
+    width: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .width_xs_10 {
+    width: 10px;
+  }
+
+  .width_xs_20 {
+    width: 20px;
+  }
+
+  .width_xs_30 {
+    width: 30px;
+  }
+
+  .width_xs_40 {
+    width: 40px;
+  }
+
+  .width_xs_35 {
+    width: 35px;
+  }
+
+  .width_xs_45 {
+    width: 45px;
+  }
+
+  .width_xs_50 {
+    width: 50px;
+  }
+
+  .width_xs_55 {
+    width: 55px;
+  }
+
+  .width_xs_60 {
+    width: 60px;
+  }
+
+  .width_xs_65 {
+    width: 65px;
+  }
+
+  .width_xs_100 {
+    width: 100px;
+  }
+
+  .width_xs_105 {
+    width: 105px;
+  }
+
+  .width_xs_110 {
+    width: 110px;
+  }
+
+  .width_xs_115 {
+    width: 115px;
+  }
+
+  .width_xs_120 {
+    width: 120px;
+  }
+
+  .width_xs_125 {
+    width: 125px;
+  }
+
+  .width_xs_130 {
+    width: 130px;
+  }
+
+  .width_xs_140 {
+    width: 140px;
+  }
+
+  .width_xs_150 {
+    width: 150px;
+  }
+
+  .width_xs_180 {
+    width: 180px;
+  }
+
+  .width_xs_200 {
+    width: 200px;
+  }
+
+  .width_xs_210 {
+    width: 210px;
+  }
+
+  .width_xs_300 {
+    width: 300px;
+  }
+
+  .width_xs_650 {
+    width: 650px;
+  }
+
+  .width_xs_10_percent {
+    width: 10%;
+  }
+
+  .width_xs_20_percent {
+    width: 20%;
+  }
+
+  .width_xs_25_percent {
+    width: 25%;
+  }
+
+  .width_xs_30_percent {
+    width: 30%;
+  }
+
+  .width_xs_33_percent {
+    width: 33%;
+  }
+
+  .width_xs_40_percent {
+    width: 40%;
+  }
+
+  .width_xs_49_percent {
+    width: 49%;
+  }
+
+  .width_xs_50_percent {
+    width: 50%;
+  }
+
+  .width_xs_60_percent {
+    width: 60%;
+  }
+
+  .width_xs_65_percent {
+    width: 65%;
+  }
+
+  .width_xs_70_percent {
+    width: 70%;
+  }
+
+  .width_xs_75_percent {
+    width: 75%;
+  }
+
+  .width_xs_80_percent {
+    width: 80%;
+  }
+
+  .width_xs_90_percent {
+    width: 90%;
+  }
+
+  .width_xs_95_percent {
+    width: 95%;
+  }
+
+  .width_xs_100_percent {
+    width: 100%;
+  }
+
+  .width_xs_fit_content {
+    width: fit-content;
+  }
+
+  .width_xs_auto {
+    width: auto;
+  }
+}

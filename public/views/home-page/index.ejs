@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2UP | All Folders | Work Space</title>
+    <link rel="stylesheet" href="<%=baseUrl%>/public/styles/atomics-css/atomics-style.css" />
+    <link rel="stylesheet" href="<%=baseUrl%>/public/styles/font-awesome/css/all.css" />
+    <script type="module" src="<%=baseUrl%>/public/views/home-page/index.js"></script>
+    <script type="module" src="<%=baseUrl%>/public/module/global.js"></script>
+  </head>
+  <body>
+    <div class="row display_flex">
+      <!-- side bar -->
+      <%-include("sidebar.ejs", {
+        workspace: workspace,
+        workspaceDenote: workspaceDenote,
+        spaceList: spaceList,
+      })%>
+      <!-- end side bar -->
+      
+      <!-- content -->
+      <%-include("content.ejs", {
+        workspace: workspace,
+        workspaceDenote: workspaceDenote,
+        spaceList: spaceList,
+      })%>
+      <!-- end content -->
+      <div id="workspaceId" value="<%=workspace.id%>" class="display_none"></div>
+    </div>
+  </body>
+</html>

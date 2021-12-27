@@ -1,0 +1,41 @@
+<div class="padding_5 sprint_stasks display_none" data-id="">
+  <div class="sprint_item">
+    <div class="sprint_item_title display_flex justify_content_sb">
+      <div class="display_flex">
+        <div class="display_flex align_items_center cursor_pointer">
+          <div
+            class="border_radius_50_percent border_width_1 border_color_secondary border_style_solid display_flex justify_content_center align_items_center margin_right_5"
+            style="width: 17px; height: 17px"
+          >
+            <i class="far fa-chevron-down font_size_10"></i>
+          </div>
+          <h3 class="margin_y_0 sprint_item_title_name">Sprint 1 (9/4/21 - 15/4/21)</h3>
+        </div>
+        <div class="new_task margin_left_20 display_flex">
+          <button
+            class="create_new_task_commom bg_whitesmoke text_transform_uppercase padding_top_7 width_100_percent padding_y_5 border_radius_5 cursor_pointer font_size_12 display_flex align_items_center border_width_1 border_style_solid border_color_white"
+          >
+            <i class="fal fa-plus margin_right_5 font_size_10"></i>
+            <span>New Task</span>
+          </button>
+        </div>
+      </div>
+      <div class="padding_5 cursor_pointer">
+        <span class="text_transform_uppercase font_size_12 opacity_0_7">Show Closed</span>
+      </div>
+    </div>
+    <div class="period display_flex align_items_center margin_top_10 margin_left_15 opacity_0_5">
+      <span class="sprint_item_start">9 Apr</span>
+      <span class="margin_x_10">
+        <i class="far fa-angle-right"></i>
+      </span>
+      <span class="sprint_item_end">16 Apr</span>
+    </div>
+    <div class="margin_top_10">
+      <%-include("../items/add-task.ejs", {className: 'add_task_common', type: 'common'}); %>
+    </div>
+    <div class="task_container_all">
+    </div>
+    <%-include("../task-by-process/task-by-process.ejs")%>
+  </div>
+</div>

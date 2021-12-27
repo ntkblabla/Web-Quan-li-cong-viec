@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="<%=baseUrl%>/public/styles/atomics-css/atomics-style.css" />
+    <link rel="stylesheet" href="<%=baseUrl%>/public/styles/font-awesome/css/all.css" />
+    <script type="module" src="<%=baseUrl%>/public/views/settings-page/users-settings/index.js"></script>
+    <script type="module" src="<%=baseUrl%>/public/module/global.js"></script>
+  </head>
+
+  <body>
+    <div class="workspace-settings-page display_flex">
+      <%- include("../common/sidebar-settings.ejs");%>
+      <div class="content flex_1 bg_whitesmoke padding_y_40 padding_x_40">
+        <div class="primary_text_hover_color font_size_22 font_weight_600 margin_y_10">Manage People</div>
+
+        <div class="invite_member margin_top_30 display_flex">
+          <div
+            class="
+              search
+              display_flex
+              align_items_center
+              border_width_1 border_color_secondary border_style_solid border_radius_3
+              width_45_percent
+              padding_y_5
+              margin_right_30
+            "
+          >
+            <div class="icon width_20 margin_right_10">
+              <i class="fas fa-search padding_left_10 padding_y_5 primary_theme_color"></i>
+            </div>
+            <div class="search_input width_400 margin_right_10">
+              <input
+                type="text"
+                name="search_input"
+                maxlength="70"
+                class="input_focus_none width_100_percent bg_whitesmoke border_none font_size_18"
+                placeholder="Search by name or email"
+              />
+            </div>
+            <div class="clear_input"></div>
+          </div>
+
+          <div
+            class="
+              invite
+              display_flex
+              flex_1
+              border_width_1 border_color_secondary border_style_solid border_radius_3
+            "
+          >
+            <div class="email_invite width=300 padding_x_15 display_flex align_items_center">
+              <input
+                type="text"
+                name="email_input"
+                maxlength="50"
+                class="input_member input_focus_none width_100_percent bg_whitesmoke border_none font_size_18"
+                placeholder="Invite by email(multiple lines and ...)"
+              />
+            </div>
+
+            <div class="member_type display_flex justify_content_center align_items_center width_100 height_100_percent border_width_0 border_left_width_1 border_color_secondary border_style_solid">
+              <div class="member_type">
+                Member
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+
+            <div class="invite_btn  display_flex flex_1 justify_content_center align_items_center height_100_percent border_width_0 border_left_width_1 border_color_primary border_style_solid">
+              <button class="invite_btn bg_highlight width_100_percent height_100_percent font_weight_600 border_none font_size_16">Invite</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="members margin_y_30">
+          <div class="member_types display_flex">
+            <div class="members font_size_14 font_weight_600 margin_right_30">Full members (3)</div>
+
+            <div class="guests font_size_14 font_weight_600"> Guests(0/3)</div>
+          </div>
+        </div>
+        
+        <div class="member_table padding_x_20 display_flex flex_direction_col border_width_1 border_radius_3 border_color_secondary border_style_solid">
+          <div class="categories display_flex align_items_center padding_y_10 padding_x_10 border_width_0 border_bottom_width_1 border_color_secondary border_style_solid">
+            <div class="name width_400">
+              <div class="name">Name</div>
+            </div>
+
+            <div class="email width_200">
+              <div class="email padding_x_10">Email</div>
+            </div>
+
+            <div class="role width_140">
+              <div class="role padding_x_5 display_flex justify_content_center">Role</div>
+            </div>
+
+            <div class="last_active width_100 ">
+              <div class="last_active display_flex justify_content_center">Last Active</div>
+            </div>
+
+            <div class="settings width_80">
+              <div class="settings padding_x_10 display_flex justify_content_center">Settings</div>
+            </div>
+          </div>
+
+          <div class="member_infor ">
+            <div class="first_member display_flex align_items_center  padding_y_10 padding_left_10 border_width_0 border_bottom_width_1 border_color_secondary border_style_solid">
+              <div class="name_infor width_400 display_flex ">
+                <div
+                  id="user_avatar"
+                  class="display_flex user_avatar  font_weight_600 border_radius_50_percent width_30 height_30 bg_highlight align_items_center justify_content_center font_size_14"
+                >
+                  PC
+                </div>
+                <div class="name padding_left_10 display_flex justify_content_center align_items_center">Nguyen Phuc Co</div>
+              </div>
+              
+              <div class="email_infor width_200">
+                <div class="email padding_x_10">npc3011@gmail.com</div>
+              </div>
+
+              <div class="role_infor width_140 display_flex justify_content_center align_items_center ">
+                <div class="role  padding_x_5">
+                  Member
+                  <i class="fas fa-angle-down"></i>
+                </div>
+              </div>
+              
+              <div class="lastactive_infor width_100">
+                <div class="lastactive_infor display_flex justify_content_center">Date</div>
+              </div>
+
+              <div class="setting_infor width_80">
+                <div class="setting_infor display_flex justify_content_center align_items_center">...</div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="workspaceId" value="<%=workspace.id%>" class="display_none"></div>
+  </body>
+</html>

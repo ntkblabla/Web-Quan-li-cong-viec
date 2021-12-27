@@ -1,0 +1,141 @@
+<div
+  class="task_detail_popup popup position_fixed overflow_auto z_index_1000 width_100_vw height_100_percent top_0 left_0 padding_top_20 padding_bottom_100 padding_bottom_xs_10 padding_top_xs_10 justify_content_center align_items_fs display_none"
+  style="background: rgba(0, 0, 0, 0.7)"
+>
+  <div class="width_100_percent height_100_percent position_absolute top_0 left_0 z_index_0 bg_close_popup"></div>
+  <div class="width_sm_95_percent position_relative z_index_1 width_80_percent display_flex align_items_center justify_content_center height_100_percent">
+    <div class="close_icon position_absolute right_5 top_5 z_index_1000 cursor_pointer padding_10">
+      <i class="far fa-times font_size_24"></i>
+    </div>
+    <div class="task_detail_content width_100_percent bg_lighter_primary_color border_radius_15 height_100_percent display_flex flex_direction_col">
+      <!-- title -->
+      <div class="display_flex bg_primary padding_y_20 border_top_left_radius_15 border_top_right_radius_15 padding_x_30">
+        <span class="font_weight_600 task_detail_sprint_title ">Sprint 4 (24/5/21 - 6/6/21)</span>
+      </div>
+      <!-- header -->
+      <div class="task_detail_header display_flex">
+        <div class="height_80 border_width_1 border_color_primary border_style_solid padding_x_30 display_flex justify_content_sb align_items_center" 
+          style="border-left-width: 0px; width: 55%;">
+          <div class="display_flex align_items_center height_100_percent">
+            <div class="task_detail_status color_white text_transform_uppercase padding_x_20 padding_y_7 border_radius_3 margin_right_20 cursor_pointer" style="background: red">
+              DOING
+            </div>
+            <div class="task_detail_assign cursor_pointer display_flex">
+              <div class="icon_add_assigner cursor_pointer border_radius_50_percent width_35 height_35 display_flex align_items_center justify_content_center
+                border_width_1 border_style_dashed border_color_white position_relative z_index_1">
+                <i class="far fa-user-plus"></i>
+              </div>
+              <div 
+                 class="assigner font_weight_600 width_35 height_35 border_radius_50_percent display_none align_items_center justify_content_center"
+                 style="background: #f42c2c"
+              ></div>
+            </div>
+          </div>
+          <div class="width_30 height_30 display_flex align_items_center justify_content_center cursor_pointer">
+            <i class="far fa-ellipsis-h font_size_20"></i>
+          </div>
+        </div>
+        <div class="col_6 height_80 border_width_1 border_color_primary border_style_solid padding_x_30" style="border-left-width: 0px; border-right-width: 0px; width: 45%">
+          <div class="height_100_percent display_flex align_items_center">
+            <div class="task_detail_created_at padding_right_20 border_width_0 border_right_width_1 border_color_primary border_style_solid opacity_0_7">
+              <div class="margin_bottom_3">
+                <span class="text_transform_uppercase font_size_12 opacity_0_6">created</span>
+              </div>
+              <div class="task_detail_created_at_content font_size_12">
+                2 Jun, 10:53 pm
+              </div>
+            </div>
+            <div class="padding_right_20 border_width_0 border_right_width_1 border_color_primary border_style_solid opacity_0_7 padding_left_20">
+              <div class="margin_bottom_3">
+                <span class="text_transform_uppercase font_size_12 opacity_0_6">estimate</span>
+              </div>
+              <div class="font_size_12 task_detail_estimate cursor_pointer cursor_pointer display_flex align_items_center">
+                <i class="far fa-hourglass"></i>
+                <span class="task_detail_estimate_content margin_left_3">1</span>
+                <div class="task_detail_estimate_input display_none margin_left_3">estimate</div>
+              </div>
+            </div>
+            <div class="opacity_0_7 padding_left_20">
+              <div class="margin_bottom_3">
+                <span class="text_transform_uppercase font_size_12 opacity_0_6">due date</span>
+              </div>
+              <div class="task_detail_duedate  cursor_pointer position_relative">
+                <input type="date" class="position_absolute width_100 top_0 task_detail_choose_duedate" style="opacity: 0; right: 19px"/>
+                <div class="task_detail_duedate_content font_size_12">
+                  2 Jun, 10:53 pm
+                </div>
+                <div class="task_detail_duedate_input font_size_12 display_none">
+                  Choose due date
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end header -->
+      <!-- content -->
+      <div class="flex_1 display_flex">
+        <div 
+           class="height_100_percent height_80 border_width_0 border_color_primary border_style_solid padding_x_30 border_right_width_1 padding_x_30 padding_top_40"
+           style="width: 55%;"
+        >
+          <div class="margin_bottom_10">
+            <style>
+              .task_detail_title {
+                border: none;
+              }
+              .task_detail_title:focus, .task_detail_title:hover {
+                outline: 1px solid rgba(0,0,0,0.5);
+                border: none;
+              }
+            </style>
+          <textarea class="task_detail_title font_size_28 padding_x_5 padding_y_10 border_radius_3 width_100_percent bg_lighter_primary_color" value="Title"></textarea>
+          </div>
+          <div class="margin_bottom_10">
+            <style>
+              .task_detail_desc {
+                border: none;
+                font-family: inherit;
+                font-weight: 400;
+              }
+              .task_detail_desc:focus, .task_detail_desc:hover {
+                outline: 1px solid rgba(0,0,0,0.5);
+              }
+            </style>
+            <textarea 
+              class="task_detail_desc height_200 bg_lighter_primary_color padding_x_5 padding_y_10 border_radius_3 width_100_percent font_size_16 border_radius_3" 
+              value="Title"
+              placeholder=" Enter the description....."
+            ></textarea>
+          </div>
+          <div class="display_flex width_100_percent border_width_1 border_style_solid border_radius_3" style="border-color: rgba(0,0,0,0.4)">
+            <div class="padding_x_10 padding_y_10 padding_right_60 border_width_0 border_right_width_1 border_style_solid" style="border-color: rgba(0,0,0,0.4)">
+              <i class="far fa-poll-h"></i>
+              <span class="margin_left_5 font_weight_600">Result</span>
+            </div>
+            <div class="flex_1 padding_x_10">
+              <textarea 
+                class="task_detail_result_input width_100_percent padding_y_10 padding_x_5 bg_lighter_primary_color" 
+                style="border: none;outline:none;"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="height_100_percent display_flex flex_direction_col justify_content_fe" style="width: 45%;">
+          <div class="flex_1 bg_primary"></div>
+          <div class="">
+            <div class="padding_y_30 width_100_percent">
+              <input class="comment padding_y_10 padding_x_30 font_size_16 width_100_percent border_none input_focus_none" placeholder="Enter your comment ....."/>
+            </div>
+            <div class="padding_top_10 padding_bottom_30 display_flex justify_content_fe padding_x_30">
+              <button class="add_task_btn padding_x_20 padding_y_10 display_flex align_items_center justify_content_center border_none bg_highlight color_whte border_radius_3
+                text_transform_uppercase font_weight_600">
+                Comment 
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

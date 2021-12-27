@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="<%=baseUrl%>/public/styles/atomics-css/atomics-style.css" />
+    <link rel="stylesheet" href="<%=baseUrl%>/public/styles/font-awesome/css/all.css" />
+    <script type="module" src="<%=baseUrl%>/public/views/settings-page/workspace-settings/index.js"></script>
+    <script type="module" src="<%=baseUrl%>/public/module/global.js"></script>
+  </head>
+
+  <body>
+    <div class="workspace-settings-page display_flex">
+      <%- include("../common/sidebar-settings.ejs");%>
+      <div class="content flex_1 bg_whitesmoke padding_y_40 padding_x_40">
+        <div class="primary_text_hover_color font_size_22 font_weight_600 margin_y_10">Workspace Settings</div>
+        <div class="display_flex margin_top_30">
+          <div
+            id="user_avatar"
+            class="
+              display_flex
+              user_avatar
+              font_weight_600
+              border_radius_50_percent
+              width_50
+              height_50
+              bg_highlight
+              align_items_center
+              justify_content_center
+              font_size_20
+            "
+          >
+            <%=workspace.name[0].toUpperCase()%>
+          </div>
+
+          <div class="workspace_name flex_1 margin_left_40">
+            <div class="border_width_0 border_bottom_width_1 border_color_secondary border_style_solid">
+              <input
+                type="text"
+                name="workspacename"
+                class="input_focus_none width_100_percent border_none font_size_22 bg_whitesmoke padding_y_5"
+                placeholder="Enter workspace name"
+                value="<%=workspace.name%>"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_save_workspace_name display_block margin_top_30">
+          <div class="btn_save_workspace_name display_flex justify_content_fe">
+            <button
+              class="
+                btn_save_workspace_name
+                bg_highlight
+                border_none border_radius_5
+                padding_x_60 padding_y_20
+                font_weight_600 font_size_20
+              "
+            >
+              Saved
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="workspaceId" value="<%=workspace.id%>" class="display_none"></div>
+  </body>
+</html>

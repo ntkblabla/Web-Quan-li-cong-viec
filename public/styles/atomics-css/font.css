@@ -1,0 +1,511 @@
+.font_style_italic {
+  font-style: italic;
+}
+
+.font_size_8 {
+  font-size: 8px;
+}
+
+.font_size_10 {
+  font-size: 10px;
+}
+
+.font_size_12 {
+  font-size: 12px;
+}
+
+.font_size_14 {
+  font-size: 14px;
+}
+
+.font_size_16 {
+  font-size: 16px;
+}
+
+.font_size_18 {
+  font-size: 18px;
+}
+
+.font_size_20 {
+  font-size: 20px;
+}
+
+.font_size_22 {
+  font-size: 22px;
+}
+
+.font_size_24 {
+  font-size: 24px;
+}
+
+.font_size_26 {
+  font-size: 26px;
+}
+
+.font_size_28 {
+  font-size: 28px;
+}
+
+.font_size_30 {
+  font-size: 30px;
+}
+
+.font_size_32 {
+  font-size: 32px;
+}
+
+.font_size_34 {
+  font-size: 34px;
+}
+
+.font_size_36 {
+  font-size: 36px;
+}
+
+.font_size_38 {
+  font-size: 38px;
+}
+
+.font_size_40 {
+  font-size: 40px;
+}
+
+.primary_font_size {
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .font_size_md_8 {
+    font-size: 8px;
+  }
+
+  .font_size_md_10 {
+    font-size: 10px;
+  }
+
+  .font_size_md_12 {
+    font-size: 12px;
+  }
+
+  .font_size_md_14 {
+    font-size: 14px;
+  }
+
+  .font_size_md_16 {
+    font-size: 16px;
+  }
+
+  .font_size_md_18 {
+    font-size: 18px;
+  }
+
+  .font_size_md_20 {
+    font-size: 20px;
+  }
+
+  .font_size_md_22 {
+    font-size: 22px;
+  }
+
+  .font_size_md_24 {
+    font-size: 24px;
+  }
+
+  .font_size_md_26 {
+    font-size: 26px;
+  }
+
+  .font_size_md_28 {
+    font-size: 28px;
+  }
+
+  .font_size_md_30 {
+    font-size: 30px;
+  }
+
+  .font_size_md_32 {
+    font-size: 32px;
+  }
+
+  .font_size_md_34 {
+    font-size: 34px;
+  }
+
+  .font_size_md_36 {
+    font-size: 36px;
+  }
+
+  .font_size_md_38 {
+    font-size: 38px;
+  }
+
+  .font_size_md_40 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .font_size_sm_8 {
+    font-size: 8px;
+  }
+
+  .font_size_sm_10 {
+    font-size: 10px;
+  }
+
+  .font_size_sm_12 {
+    font-size: 12px;
+  }
+
+  .font_size_sm_14 {
+    font-size: 14px;
+  }
+
+  .font_size_sm_16 {
+    font-size: 16px;
+  }
+
+  .font_size_sm_18 {
+    font-size: 18px;
+  }
+
+  .font_size_sm_20 {
+    font-size: 20px;
+  }
+
+  .font_size_sm_22 {
+    font-size: 22px;
+  }
+
+  .font_size_sm_24 {
+    font-size: 24px;
+  }
+
+  .font_size_sm_26 {
+    font-size: 26px;
+  }
+
+  .font_size_sm_28 {
+    font-size: 28px;
+  }
+
+  .font_size_sm_30 {
+    font-size: 30px;
+  }
+
+  .font_size_sm_32 {
+    font-size: 32px;
+  }
+
+  .font_size_sm_34 {
+    font-size: 34px;
+  }
+
+  .font_size_sm_36 {
+    font-size: 36px;
+  }
+
+  .font_size_sm_38 {
+    font-size: 38px;
+  }
+
+  .font_size_sm_40 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .font_size_xs_8 {
+    font-size: 8px;
+  }
+
+  .font_size_xs_10 {
+    font-size: 10px;
+  }
+
+  .font_size_xs_12 {
+    font-size: 12px;
+  }
+
+  .font_size_xs_14 {
+    font-size: 14px;
+  }
+
+  .font_size_xs_16 {
+    font-size: 16px;
+  }
+
+  .font_size_xs_18 {
+    font-size: 18px;
+  }
+
+  .font_size_xs_20 {
+    font-size: 20px;
+  }
+
+  .font_size_xs_22 {
+    font-size: 22px;
+  }
+
+  .font_size_xs_24 {
+    font-size: 24px;
+  }
+
+  .font_size_xs_26 {
+    font-size: 26px;
+  }
+
+  .font_size_xs_28 {
+    font-size: 28px;
+  }
+
+  .font_size_xs_30 {
+    font-size: 30px;
+  }
+
+  .font_size_xs_32 {
+    font-size: 32px;
+  }
+
+  .font_size_xs_34 {
+    font-size: 34px;
+  }
+
+  .font_size_xs_36 {
+    font-size: 36px;
+  }
+
+  .font_size_xs_38 {
+    font-size: 38px;
+  }
+
+  .font_size_xs_40 {
+    font-size: 40px;
+  }
+}
+
+.font_weight_100 {
+  font-weight: 100;
+}
+
+.font_weight_200 {
+  font-weight: 200;
+}
+
+.font_weight_300 {
+  font-weight: 300;
+}
+
+.font_weight_400 {
+  font-weight: 400;
+}
+
+.font_weight_500 {
+  font-weight: 500;
+}
+
+.font_weight_600 {
+  font-weight: 600;
+}
+
+.font_weight_700 {
+  font-weight: 700;
+}
+
+.font_weight_800 {
+  font-weight: 800;
+}
+
+.font_weight_900 {
+  font-weight: 900;
+}
+
+.font_weight_bold {
+  font-weight: bold;
+}
+
+.font_weight_bolder {
+  font-weight: bolder;
+}
+
+.font_weight_100-hover:hover {
+  font-weight: 100;
+}
+
+.font_weight_200-hover:hover {
+  font-weight: 200;
+}
+
+.font_weight_300-hover:hover {
+  font-weight: 300;
+}
+
+.font_weight_400-hover:hover {
+  font-weight: 400;
+}
+
+.font_weight_500-hover:hover {
+  font-weight: 500;
+}
+
+.font_weight_600-hover:hover {
+  font-weight: 600;
+}
+
+.font_weight_700-hover:hover {
+  font-weight: 700;
+}
+
+.font_weight_800-hover:hover {
+  font-weight: 800;
+}
+
+.font_weight_900-hover:hover {
+  font-weight: 900;
+}
+
+.font_weight_bold-hover:hover {
+  font-weight: bold;
+}
+
+.font_weight_bolder-hover:hover {
+  font-weight: bolder;
+}
+
+@media (max-width: 1024px) {
+  .font_weight_md_100 {
+    font-weight: 100;
+  }
+
+  .font_weight_md_200 {
+    font-weight: 200;
+  }
+
+  .font_weight_md_300 {
+    font-weight: 300;
+  }
+
+  .font_weight_md_400 {
+    font-weight: 400;
+  }
+
+  .font_weight_md_500 {
+    font-weight: 500;
+  }
+
+  .font_weight_md_600 {
+    font-weight: 600;
+  }
+
+  .font_weight_md_700 {
+    font-weight: 700;
+  }
+
+  .font_weight_md_800 {
+    font-weight: 800;
+  }
+
+  .font_weight_md_900 {
+    font-weight: 900;
+  }
+
+  .font_weight_md_bold {
+    font-weight: bold;
+  }
+
+  .font_weight_md_bolder {
+    font-weight: bolder;
+  }
+}
+
+@media (max-width: 768px) {
+  .font_weight_sm_100 {
+    font-weight: 100;
+  }
+
+  .font_weight_sm_200 {
+    font-weight: 200;
+  }
+
+  .font_weight_sm_300 {
+    font-weight: 300;
+  }
+
+  .font_weight_sm_400 {
+    font-weight: 400;
+  }
+
+  .font_weight_sm_500 {
+    font-weight: 500;
+  }
+
+  .font_weight_sm_600 {
+    font-weight: 600;
+  }
+
+  .font_weight_sm_700 {
+    font-weight: 700;
+  }
+
+  .font_weight_sm_800 {
+    font-weight: 800;
+  }
+
+  .font_weight_sm_900 {
+    font-weight: 900;
+  }
+
+  .font_weight_sm_bold {
+    font-weight: bold;
+  }
+
+  .font_weight_sm_bolder {
+    font-weight: bolder;
+  }
+}
+
+@media (max-width: 576px) {
+  .font_weight_xs_100 {
+    font-weight: 100;
+  }
+
+  .font_weight_xs_200 {
+    font-weight: 200;
+  }
+
+  .font_weight_xs_300 {
+    font-weight: 300;
+  }
+
+  .font_weight_xs_400 {
+    font-weight: 400;
+  }
+
+  .font_weight_xs_500 {
+    font-weight: 500;
+  }
+
+  .font_weight_xs_600 {
+    font-weight: 600;
+  }
+
+  .font_weight_xs_700 {
+    font-weight: 700;
+  }
+
+  .font_weight_xs_800 {
+    font-weight: 800;
+  }
+
+  .font_weight_xs_900 {
+    font-weight: 900;
+  }
+
+  .font_weight_xs_bold {
+    font-weight: bold;
+  }
+
+  .font_weight_xs_bolder {
+    font-weight: bolder;
+  }
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Folders | Work Space</title>
+    <link rel="stylesheet" href="public/styles/atomics-css/atomics-style.css" />
+    <link rel="stylesheet" href="public/styles/font-awesome/css/all.css" />
+    <script type="module" src="public/views/create-workspace-page/index.js"></script>
+    <style>
+      input:focus {
+        border-width: 0px;
+        border-bottom-width: 1px;
+      }
+
+      .color_item {
+        cursor: pointer;
+        transition: all 0.15s linear;
+      }
+      .color_item.active {
+        width: 50px;
+        height: 50px;
+      }
+      .color_item:hover {
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="display_flex" style="height: 100vh">
+      <div
+        class="col_10 display_flex align_items_center position_relative"
+        style="padding-left: 200px; padding-right: 200px"
+      >
+        <div class="position_absolute right_20 top_20 cursor_pointer">
+          <a href="/">
+            <span class="font_weight_600 font_size_16 highlight_theme_color">Cancel</span>
+          </a>
+        </div>
+        <form class="width_100_percent create_name">
+          <div class="display_flex width_100_percent">
+            <div class="logo margin_right_30">
+              <img src="public/images/logo.png" class="width_60 height_60 border_radius_50_percent" alt="logo" />
+            </div>
+            <div class="width_100_percent">
+              <h1 class="margin_y_0 margin_bottom_10 margin_top_15">Name your Workspace:</h1>
+              <div>
+                <input
+                  class="name_workspace bg_white width_100_percent border_width_0 border_bottom_width_1 border_bottom_color_red border_style_solid padding_y_10 font_size_32 color_text_black"
+                  placeholder="Enter name of your workspace..."
+                  name="workspace"
+                  required
+                />
+                <div class="margin_top_15 text_align_right">
+                  <span class="font_size_18 highlight_theme_color">press ENTER</span>
+                </div>
+              </div>
+              <button
+                type="submit"
+                class="next_to_color_button margin_top_30 padding_x_25 padding_y_15 bg_highlight color_white border_none border_radius_5 font_weight_600"
+              >
+                NEXT
+              </button>
+            </div>
+          </div>
+        </form>
+        <form class="width_100_percent create_color display_none">
+          <div class="display_flex width_100_percent">
+            <div class="logo margin_right_30">
+              <img src="public/images/logo.png" class="width_60 height_60 border_radius_50_percent" alt="logo" />
+            </div>
+            <div class="width_100_percent">
+              <h1 class="margin_y_0 margin_bottom_10 margin_top_15">Customize your Workspace's avatar color:</h1>
+              <div class="display_flex margin_top_30">
+                <div
+                  class="color_workspace_active display_flex align_items_center justify_content_center width_140 height_140 border_radius_50_percent margin_right_20"
+                  style="background-color: #7b68ee"
+                >
+                  <span class="font_size_40 color_white">C</span>
+                </div>
+                <div class="flex_1 display_flex flex_wrap margin_top_10">
+                  <div class="width_100 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #7b68ee"
+                      value="#7b68ee"
+                    ></div>
+                  </div>
+                  <div class="width_100 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #ffa12f"
+                      value="#ffa12f"
+                    ></div>
+                  </div>
+                  <div class="width_100 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #ff5722"
+                      value="#ff5722"
+                    ></div>
+                  </div>
+                  <div class="width_100 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #f42c2c"
+                      value="#f42c2c"
+                    ></div>
+                  </div>
+                  <div class="width_100 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #f8306d"
+                      value="#f8306d"
+                    ></div>
+                  </div>
+                  <div class="width_100 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #ff00fc"
+                      value="#ff00fc"
+                    ></div>
+                  </div>
+                  <div class="width_100 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #4169e1"
+                      value="#4169e1"
+                    ></div>
+                  </div>
+                  <div class="width_100 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #5f81ff"
+                      value="#5f81ff"
+                    ></div>
+                  </div>
+                  <div class="width_100 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #07a092"
+                      value="#07a092"
+                    ></div>
+                  </div>
+                  <div class="width_100 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #2ea52c"
+                      value="#2ea52c"
+                    ></div>
+                  </div>
+                  <div class="width_100 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #757380"
+                      value="#757380"
+                    ></div>
+                  </div>
+                  <div class="width_100 height_60 display_flex align_items_center justify_content_center">
+                    <div
+                      class="color_picker width_20 height_20 border_radius_50_percent color_item"
+                      style="background-color: #202020"
+                      value="#202020"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button
+                  type="button"
+                  class="back_to_name_button margin_top_40 padding_x_25 padding_y_15 bg_primary color_white border_none border_radius_5 font_weight_600 margin_right_30"
+                >
+                  BACK
+                </button>
+                <button
+                  type="submit"
+                  class="create_workspace_btn margin_top_40 padding_x_25 padding_y_15 bg_highlight color_white border_none border_radius_5 font_weight_600"
+                >
+                  CREATE WORKSPACE
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col_2 bg_highlight position_relative overflow_hidden">
+        <div
+          class="position_absolute width_250 height_250 bg_black opacity_0_1 border_radius_50_percent"
+          style="top: 50px; left: -125px"
+        ></div>
+        <div
+          class="position_absolute width_30 height_30 bg_black opacity_0_1 border_radius_50_percent"
+          style="top: 350px; left: 55px"
+        ></div>
+        <div
+          class="position_absolute width_50 height_50 bg_black opacity_0_1 border_radius_50_percent"
+          style="top: 100px; left: 200px"
+        ></div>
+        <div
+          class="position_absolute width_210 height_210 bg_black opacity_0_1 border_radius_50_percent"
+          style="bottom: 50px; right: -105px"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>
